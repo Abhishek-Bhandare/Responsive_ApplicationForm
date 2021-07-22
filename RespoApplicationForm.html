@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Application Form</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="styleform.css" rel="stylesheet" />
+  <link href="../AssignmentForm/favicon.ico" rel="icon" />
+</head>
+
+<body>
+  <form method="POST" enctype="multipart/form-data" autocomplete="off">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Application for the Post of PROJECT ENGINEER</h2>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+          <b>
+            1. Position Code (select<br />
+            one): </b><sup class="sup"> *</sup>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-5">
+          <select name="Code" required>
+            <option value="select" selected>Select</option>
+            <option value="Production Engineer">Project Engineer</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <div id="flex">
+        <div>
+          <div class="row">
+            <div class="col-4"><b>2. Name :</b><sup class="sup"> *</sup></div>
+            <div class="col-8">
+              <input type="text" name="name" required style="width: 100%" autofocus>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-4">
+              <b>3.Father's<br />Name :</b><sup class="sup"> *</sup>
+            </div>
+            <div class="col-8">
+              <input type="text" name="fname" required style="width: 100%" />
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-4">
+              <b>4.date of<br />
+                Birth:</b><sup class="sup"> *</sup>
+            </div>
+            <div class="col-3">
+              <input type="date" name="date" style="width: 100%; height: 40px" required />
+            </div>
+            <div class="col-1"><b>Age</b></div>
+            <div class="col-4">
+              <input type="text" name="age" style="width: 50%; height: 40px" />
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-4"><b>5. Gender :</b><sup class="sup"> *</sup></div>
+            <div class="col-8">
+              <select name="gender" required style="width: 100%">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="trang">Transgender</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-4">
+              <b>6. Nationality:</b><sup class="sup"> *</sup>
+            </div>
+            <div class="col-8">
+              <input type="text" name="nation" required style="width: 100%" />
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-4">
+              <b>7. Martial<br />status :</b><sup class="sup"> *</sup>
+            </div>
+            <div class="col-8">
+              <select name="married" required style="width: 100%">
+                <option value="select" selected>select</option>
+                <option value="married">Married</option>
+                <option value="unmarried">Unmarried</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-7 col-sm-6 col-md-4 col-lg-4 col-xl-5">
+              <b>8. Whether belongs to<br />(select one):
+                <sup class="sup">*</sup></b>
+            </div>
+            <div class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="display: inline">
+              <input type="radio" name="category" />SC
+              <input type="radio" name="category" />ST
+              <input type="radio" name="category" />OBC
+              <input type="radio" name="category" />PWD
+              <input type="radio" name="category" />GENERAL
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-left: 10px">
+          <div class="row">
+            <div class="col-12" style="margin-right: 0px; margin-left: 15px">
+              <b>Upload Your Photo </b> <sup class="sup">*</sup>
+            </div>
+          </div>
+          <div class="col-12">
+            <div style="
+                height: 150px;
+                width: 130px;
+                border: 1px solid;
+                margin-right: 20px;
+              "></div>
+          </div>
+          <br />
+          <div class="col-12">
+            <input type="file" name="photo" style="margin-right: 20px" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-3">
+          <b>9. Proof of Identity: </b><sup class="sup">*</sup>
+        </div>
+        <div class="col-5">
+          <select name="identity" style="width: 90%" required>
+            <option value="select" selected>Aadhar Number</option>
+            <option value="dL">Driving License</option>
+            <option value="passport">Passport</option>
+            <option value="panid">PAN CARD</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <input type="text" name="idnumber" required style="width: 100%; height: 40px"
+            placeholder="Write your Aadhar/PAN number" />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-3">
+          <b>10. Address for<br />Correspondence :</b><sup class="sup"> *</sup>
+        </div>
+        <div class="col-5">
+          <textarea rows="5" cols="3" style="width: 90%" required></textarea>
+        </div>
+        <div class="col-4">
+          Phone Numbers (with STD Codes)<br />
+          <div class="row">
+            <div class="col-4">
+              <b>Office :</b><br />
+              <input type="text" name="office" style="width: 100%" />
+            </div>
+            <div class="col-4">
+              <b>Residence :</b><br />
+              <input type="text" name="office" style="width: 100%" />
+            </div>
+            <div class="col-4">
+              <b>Mobile :</b><sup class="sup">*</sup><br />
+              <input type="text" name="office" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-3">
+          <b>Select State:<sup class="sup">*</sup></b><br />
+          <select name="state" required>
+            <option value="select" selected>Select State</option>
+            <option value="mahar">Maharastra</option>
+            <option value="wb">West bengal</option>
+            <option value="ut">Uttrakhand</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <b>Select City/town:<sup class="sup">*</sup></b><br />
+          <select name="city" required style="width: 90%">
+            <option value="select" selected>Select City</option>
+            <option value="mahaah">Ahmednagar</option>
+            <option value="wbkol">Kolkatta</option>
+            <option value="utdeh">Dehradun</option>
+          </select>
+        </div>
+
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <div>
+                <b>Primary Email:<sup class="sup">*</sup></b>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <input type="email" name="email" required style="width: 100%; height: 35px" placeholder="Enter Email" />
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-6">
+              <div>
+                <b>Secondary Email:<sup class="sup">*</sup></b>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <input type="email" name="email" required style="width: 100%; height: 35px" placeholder="Enter Email" />
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-3"><b> Pincode :</b><sup class="sup"> *</sup></div>
+        <div class="col-6">
+          <input type="text" name="pcode" required style="width: 70%; height: 40px" />
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <b>11. Are you currently working with C-DAC? :</b><sup class="sup"> *</sup>
+        </div>
+        <div class="col-5">
+          <select name="yon" style="width: 80%" required>
+            <option value="no" selected>No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>12. Are you employed in any Govt./ Semi-Govt./ PSU/<br />Autonomous
+            Bodies?</b><sup class="sup"> *</sup>
+        </div>
+        <div class="col-5">
+          <select name="yon" style="width: 80%" required>
+            <option value="no" selected>No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-12">
+          If <b>"Yes"</b> the application should be forwarded through proper
+          channel or NOC to be produced at the time of Interview.
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>13. Have you ever been interviewed for recruitment in any<br />
+            post in C-DAC earlier?</b><sup class="sup"> *</sup>
+        </div>
+        <div class="col-5">
+          <select name="yon" style="width: 80%" required>
+            <option value="no" selected>No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-12">
+          <b>14. Academic & Professional Qualifications</b> (Begin with latest
+          Graduation/ PG/ PG Diploma (if any)/ PhD)
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <!-- <div id="ovrf"> -->
+            <table border="1" style="width: 100%; text-align: center" class="table table-responsive">
+              <tr>
+                <td>
+                  <b>Qaulification<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <b>Name of Institute/ Board/<br />University<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <b>Specialization<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <b>Year of<br />Passing<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <b>% Marks<br />(Aggregate)<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <b>Class/<br />Division/<br />Rank/<br />Distinction<sup class="sup">*</sup></b>
+                </td>
+                <td>
+                  <button id="btn">Add<br />row</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <select name="educ" required style="width: 100%; height: 30px; margin-left: 10px">
+                    <option value="select" selected>Select</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="dip">Diploma</option>
+                  </select>
+                </td>
+                <td id="pad">
+                  <input type="text" name="univer" style="height: 30px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="univer" style="height: 30px; width: 100px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="univer" style="height: 30px; width: 60px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="univer" style="height: 30px; width: 60px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="univer" style="height: 30px; width: 60px" />
+                </td>
+                <td>
+                  <button style="background-color: red; color: snow" type="menu" class="hov">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <br />
+          <!-- </div> -->
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>15. Work Experience (Latest First) &nbsp;&nbsp;</b>
+          <input type="checkbox" name="worke" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <!-- <div id="ovrf2"> -->
+            <table border="1" style="width: 100%; height: 100%; text-align: center" class="table table-responsive">
+              <tr>
+                <td>
+                  <b>Name of the<br />
+                    Organization</b>
+                </td>
+                <td>
+                  <b>Designation<br />& Grade</b>
+                </td>
+                <td>
+                  <b>Total<br />Salary<br />Drawn</b>
+                </td>
+                <td>
+                  <b>From<br />(mon-YYYY)</b>
+                </td>
+                <td>
+                  <b>To<br />(mon-YYYY)</b>
+                </td>
+                <td>
+                  <b>Nature of work releavent<br />for applied job</b>
+                </td>
+                <td><b>Add rows</b></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="text" name="orgz" style="height: 30px; width: 100px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="orgz" style="height: 30px; width: 100px" />
+                </td>
+                <td id="pad">
+                  <input type="text" name="orgz" style="height: 30px; width: 50px" />
+                </td>
+                <td id="pad">
+                  <table>
+                    <tr>
+                      <td>
+                        <select name="date" style="width: 80px; height: 30px">
+                          <option value="select" selected>Select</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input type="text" name="orgz" style="height: 30px; width: 100px" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td id="pad">
+                  <table>
+                    <tr>
+                      <td>
+                        <select name="date" style="width: 80px; height: 30px">
+                          <option value="select" selected>Select</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input type="text" name="orgz" style="height: 30px; width: 100px" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td id="pad">
+                  <textarea rows="5" cols="2" style="width: 100px; height: 100px"></textarea>
+                </td>
+                <td>
+                  <button style="
+                      background-color: royalblue;
+                      color: snow;
+                      width: 50px;
+                    " type="menu" class="hov">
+                    Add row
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <br />
+          <!-- </div> -->
+        </div>
+      </div>
+      <br />
+
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <b>16. Any Short Term Certificate courses/ Training Undergone</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+          If so, list the details.
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>17. GATE/ UGC-CSIR Examination etc. Qualified, if any</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+          (Discipline/ Branch, Year of Passing, %)
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>17. GATE/ UGC-CSIR Examination etc. Qualified, if any</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+          (Discipline/ Branch, Year of Passing, %)
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6"><b>18. a) P.G (M.E/ M. Tech) Project Title</b></div>
+        <div class="col-6">
+          <input type="text" name="name" required style="width: 100%; height: 40px" />
+        </div>
+        <br />
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6" style="margin-top: 30px">
+          <b>
+            &nbsp;&nbsp;&nbsp;&nbsp; b) P.G Project Synopsis/ Abstract (Max. 250
+            Words)</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6"><b>19. a) Ph.D Thesis Title</b></div>
+        <div class="col-6">
+          <input type="text" name="name" required style="width: 100%; height: 40px" />
+        </div>
+        <br />
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6" style="margin-top: 30px">
+          <b>
+            &nbsp;&nbsp;&nbsp;&nbsp;b) Ph.D Thesis Synopsis/ Abstract (Max. 250
+            Words)</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>20. Workshops/ Seminars/ Conferences attended</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>21. Papers published/ presented / Technical talks delivered</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>22. Any additional info that may not have been covered</b>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-6">
+          <b>23. References (Name, Occupation, Addr, Email, Mobile#)</b>
+          <sup class="sup">*</sup>
+        </div>
+        <div class="col-6">
+          <textarea style="width: 100%; height: 120px; border-radius: 5px"></textarea><br />
+          (at least 2 references)
+        </div>
+      </div>
+
+      <hr />
+
+      <p><b>Application Fees Details</b></p>
+      <div class="row">
+        <div class="col-7">
+          <div class="row" style="justify-content: center; padding-top: 10px">
+            <div class="col-4">
+              <b><u>Mode of Payment</u></b>
+            </div>
+            <div class="col-6">
+              <input type="text" name="MoP" style="width: 60%" />
+            </div>
+          </div>
+
+          <div class="row" style="justify-content: center; padding-top: 10px">
+            <div class="col-4">
+              <b><u>Bank and Branch</u></b>
+            </div>
+            <div class="col-6">
+              <input type="text" name="BoB" style="width: 60%" />
+            </div>
+          </div>
+
+          <div class="row" style="justify-content: center; padding-top: 10px">
+            <div class="col-4">
+              <b><u>Transaction Id <sup class="sup">*</sup></u></b>
+            </div>
+            <div class="col-6">
+              <input type="text" name="tranID" style="width: 60%" />
+            </div>
+          </div>
+
+          <div class="row" style="justify-content: center; padding-top: 10px">
+            <div class="col-4">
+              <b><u>Transaction Date <sup class="sup">*</sup></u></b>
+            </div>
+            <div class="col-6">
+              <input type="date" name="TDate" style="width: 60%; margin-bottom: 10px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="row">
+            <div class="col-12">
+              <b>Upload proof of payment <sup class="sup">*</sup></b>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div style="width: 120px; height: 130px; border: 1px solid #000"></div>
+            </div>
+            <input type="file" name="proof" style="margin-left: 15px; margin-top: 10px" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-12">
+          <b>Upload your CV </b>File name: [yourname_CV.pdf]
+          <sup class="sup">*</sup>
+        </div>
+        <br /><br />
+        <div class="col-12">
+          <input type="file" name="cv" />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-12">
+          <b><u>DECLARATION</u></b><br /><br />
+          <p>
+            <b>1. I certify that all information provided in this application is
+              true, complete and correct to the best of my knowledge and
+              belief.</b>
+          </p>
+          <p>
+            <b>&nbsp;&nbsp;&nbsp I understand that any false information or
+              omission of information may disqualify me from consideration for
+              employment and may result in dismissal from the job, if discovered
+              at a later date.<br /><br />2. I have read and understood the
+              above declaration before signing this.</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-left: 20px">
+        <div class="col-2">
+          <b>Place: <sup class="sup">*</sup></b>
+        </div>
+        <div class="col-4">
+          <input type="text" name="place" style="width: 60%" />
+        </div>
+
+        <div class="col-2">
+          <b>Date: <sup class="sup">*</sup></b>
+        </div>
+        <div class="col-4">
+          <input type="text" name="date" style="width: 60%" placeholder="13/07/2021 @ 3:11 PM" />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-12">
+          <input type="checkbox" name="accepted" />
+          <b><u> &nbsp; I accept the Terms and Conditions</u></b>
+        </div>
+      </div>
+      <br />
+
+      <div class="row" style="margin-bottom: 30px">
+        <div class="col-3">
+          <button style="
+              width: 100%;
+              color: aliceblue;
+              background-color: green;
+              border-radius: 5px;
+            " value="submit">
+            SUBMIT FORM
+          </button>
+        </div>
+        <div class="col-3">
+          <button style="
+              width: 100%;
+              color: aliceblue;
+              background-color: blue;
+              border-radius: 5px;
+            ">
+            SAVE DRAFT
+          </button>
+        </div>
+        <div class="col-3">
+          <button style="width: 100%; background-color: yellow; border-radius: 5px">
+            CLEAR FORM
+          </button>
+        </div>
+        <div class="col-3">
+          <button style="
+              width: 100%;
+              color: aliceblue;
+              background-color: brown;
+              border-radius: 5px;
+            ">
+            BACK
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div style="text-align: center">
+      © 2020 C-DAC. All rights reserved Website owned & maintained by: Centre
+      for Development of Advanced Computing (C-DAC)
+    </div>
+  </form>
+  
+</body>
+
+</html>
